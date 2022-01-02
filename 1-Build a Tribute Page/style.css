@@ -1,6 +1,87 @@
-* #main {
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #333;
+  --bg-color: #e5e5e5;
+  --font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
   display: flex;
   flex-direction: column;
-  background-color: #e5e5e5;
-  border-radius: 1%;
+  justify-content: center;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+#main {
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  margin: 2.1rem 0.6rem;
+  padding: 1rem;
+  font-family: var(--font-family);
+  line-height: 1.5;
+  color: var(--text-color);
+  margin: 0;
+}
+
+#title {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+#blockquote {
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+}
+
+q {
+  font-style: italic;
+}
+
+.more-about {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+#title,
+#img-caption,
+.subtitle {
+  text-align: center;
+}
+
+#img-caption {
+  font-size: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+#img-div {
+  background: white;
+  margin: 0;
+}
+
+#img-div > img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#time-line {
+  max-width: 550px;
+  margin: 0 auto 3.5rem auto;
+  line-height: 1.6;
+}
+
+#time-line li {
+  margin: 1.1rem 0;
+}
+
+a {
+  color: #477ca7;
+}
+
+a:visited {
+  color: #69386d;
 }
