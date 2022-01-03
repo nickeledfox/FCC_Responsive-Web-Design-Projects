@@ -1,0 +1,25 @@
+{
+  "name": "fcc_responsive-web-design-projects",
+  "version": "1.0.0",
+  "description": "Free Code Camp Responsive Web Design Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mia-7-7/FCC_Responsive-Web-Design-Projects.git"
+  },
+  "keywords": [],
+  "author": "mia-7-7",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mia-7-7/FCC_Responsive-Web-Design-Projects/issues"
+  },
+  "homepage": "https://github.com/mia-7-7/FCC_Responsive-Web-Design-Projects#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0"
+  }
+}
