@@ -28,6 +28,7 @@ const pughtml = () => {
 
 const watching = () => {
   watch(base, pughtml).on('change', browserSync.reload);
+  watch(dist + '**/*.css').on('change', browserSync.reload);
 };
 
 exports.browsersync = browsersync;
