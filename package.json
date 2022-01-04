@@ -17,9 +17,12 @@
     "url": "https://github.com/mia-7-7/FCC_Responsive-Web-Design-Projects/issues"
   },
   "homepage": "https://github.com/mia-7-7/FCC_Responsive-Web-Design-Projects#readme",
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-pug": "^5.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <title>Survey Form</title>
   </head>
   <body>
-    <p>pug test 1!!</p>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Survey Form description</p>
+      <div id="form-container">
+        <form id="survey-form" action="">
+          <div class="form-group">
+            <label class="form-label" id="name-label" for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" id="number-label" for="number">Age</label>
+            <input id="number" type="number" name="email" placeholder="Age" min="5" max="100" required>
+            <div class="form-group">
+              <p>Something</p>
+              <select class="form-control" id="dropdown" name="role" required>
+                <option disabled selected value>Select current role</option>
+                <option value="value-1">Value-1</option>
+                <option value="value-2">Value-2</option>
+                <option value="value-3">Value-3  </option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <ul class="animated-particles">
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
