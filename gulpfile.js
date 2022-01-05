@@ -1,9 +1,13 @@
 const { src, dest, watch, parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('gulp-autoprefixer');
 const pug = require('gulp-pug');
+useref = require('gulp-useref');
 
-const base = '3-Build_a_Product_Landing_Page' + '/src/pug/index.pug';
+const base = '3-Build_a_Product_Landing_Page/src/';
 const dist = '3-Build_a_Product_Landing_Page' + '/dist';
+
 const browsersync = () => {
   browserSync.init({
     server: {
@@ -15,7 +19,7 @@ const browsersync = () => {
 };
 
 const pughtml = () => {
-  return src(base)
+  return src(base + 'pug/index.pug')
     .pipe(
       pug({
         pretty: true,
@@ -25,13 +29,31 @@ const pughtml = () => {
     .pipe(browserSync.stream());
 };
 
+const styles = () => {
+  return src(base + '/scss/main.scss')
+    .pipe(
+      sass({
+        outputStyle: 'expanded',
+        includePath: ['./node_modules'],
+      })
+    )
+    .pipe(
+      autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })
+    )
+    .pipe(useref())
+    .pipe(dest(dist + '/css'))
+    .pipe(browserSync.stream());
+};
+
 const watching = () => {
   watch(base, pughtml).on('change', browserSync.reload);
+  watch([base + 'scss/**/*.scss'], styles);
   watch(dist + '**/*.css').on('change', browserSync.reload);
 };
 
 exports.browsersync = browsersync;
 exports.pughtml = pughtml;
 exports.watching = watching;
+exports.styles = styles;
 
-exports.default = parallel(pughtml, browsersync, watching);
+exports.default = parallel(pughtml, browsersync, styles, watching);
