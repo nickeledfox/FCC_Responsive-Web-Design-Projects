@@ -4,55 +4,130 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="main.css")
+    link(rel="stylesheet", href="styles/main.css")
     title Survey Form
   body
     .container
       h1#title Survey Form
-      p#description Survey Form description
+      p#description.subtitle Survey Form nicely formatted description
+      
       #form-container
         form#survey-form(action="")
-          .form-group
-            label#name-label.form-label(for="name") Name
-            input#name(
+          div
+            label#name-label(for="name") Name
+            input#name.input-field(
               type="text",
               name="name",
               placeholder="Enter your name",
               required
             )
-          .form-group
-            label#email-label.form-label(for="email") Email
-            input#email(
+          div
+            label#email-label(for="email") Email
+            input#email.input-field(
               type="email",
               name="email",
               placeholder="Enter your Email",
               required
             )
-          .form-group
-            label#number-label.form-label(for="number") Age
-            input#number(
+          div
+            label#number-label(for="number") Some number
+            input#number.input-field(
               type="number",
               name="email",
-              placeholder="Age",
-              min="5",
+              placeholder="Enter some number...",
+              min="1",
               max="100",
               required
             )
-            .form-group
-              p Something
+
+            div
+              p Some choice
               select#dropdown.form-control(name="role", required)
                 option(disabled, selected, value) Select current role
                 option(value="value-1") Value-1
                 option(value="value-2") Value-2
-                option(value="value-3") Value-3  
-        ul.animated-particles
-          li 
-          li 
-          li 
-          li 
-          li 
-          li 
-          li 
-          li 
-          li 
-          li 
+                option(value="value-3") Value-3
+
+            div
+              p Some more choice
+              .box-container
+                .box-group
+                  label Some Option-0
+                    input(
+                      type="radio",
+                      name="name-value",
+                      value="value-1",
+                      checked
+                    )
+                  label Some Option-1
+                    input(type="radio", name="name-value", value="value-2")
+                .box-group
+                  label Some Option-2
+                    input(type="radio", name="name-value", value="value-3")
+                  label Some Option-3
+                    input(type="radio", name="name-value", value="value-4")
+
+            div 
+              p Something 3
+              .box-container
+                .box-group
+                  label Checkbox-value 1
+                    input(
+                      type="checkbox", 
+                      name="cb-name-value", value="heckbox-value-1"
+                      )
+                    span.checkmark
+                  label Checkbox-value 2
+                    input(
+                      type="checkbox", 
+                      name="cb-name-value", value="heckbox-value-2"
+                      )
+                    span.checkmark
+                  label Checkbox-value 3
+                    input(
+                      type="checkbox", 
+                      name="cb-name-value", value="heckbox-value-3"
+                      )
+                    span.checkmark
+                .box-group
+                  label Checkbox-value 4
+                    input(
+                      type="checkbox", 
+                      name="cb-name-value", value="heckbox-value-4"
+                      )
+                    span.checkmark
+                  label Checkbox-value 5
+                    input(
+                      type="checkbox", 
+                      name="cb-name-value", value="heckbox-value-5"
+                      )
+                    span.checkmark
+                  label Checkbox-value 6
+                    input(
+                      type="checkbox", 
+                      name="cb-name-value", value="heckbox-value-6"
+                      )
+                    span.checkmark
+
+            div#textarea
+                p.subtitle.textarea Any comments or suggestions?
+                textarea.input-field(
+                  name="comments",
+                   cols="30", 
+                   rows="7",
+                   placeholder="Enter your comment here...") 
+
+            .submit-group
+              button#submit(type="submit", name="submit-form") Submit
+
+        .animated-particles
+          span 
+          span 
+          span 
+          span 
+          span 
+          span 
+          span 
+          span 
+          span 
+          span 

@@ -1,0 +1,18 @@
+:root {
+  /************* colors ******/
+  --background: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(12, 116, 117, 1) 90%
+  );
+  --input-background: rgba(255, 255, 255, 0.2);
+  --input-darcker: rgba(255, 255, 255, 0.4);
+  --input-ligher: rgba(255, 255, 255, 0.411);
+  --placeholder: rgba(240, 239, 239, 0.842);
+
+  /********** font **********/
+  --font-family: "Source Sans Pro", sans-serif;
+
+  /********** width **********/
+  --main-width: 32.142857rem /* 450px -> 32.142857rem */;
+}
