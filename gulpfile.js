@@ -2,9 +2,8 @@ const { src, dest, watch, parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
 const pug = require('gulp-pug');
 
-const base = '2-Build_a_Survey_Form' + '/**/*.pug';
-const dist = '2-Build_a_Survey_Form' + '/dist/';
-
+const base = '3-Build_a_Product_Landing_Page' + '/src/pug/index.pug';
+const dist = '3-Build_a_Product_Landing_Page' + '/dist';
 const browsersync = () => {
   browserSync.init({
     server: {
