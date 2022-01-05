@@ -49,26 +49,23 @@ html(lang="en")
                 option(value="value-3") Value-3
 
             div
-              p Some more choice
+              p.s-subtitle Some more choice description
               .box-container
                 .box-group
-                  label Some Option-0
-                    input(
-                      type="radio",
-                      name="name-value",
-                      value="value-1",
-                      checked
-                    )
                   label Some Option-1
-                    input(type="radio", name="name-value", value="value-2")
+                    input(type="radio", name="name-value", value="value-1",
+                    checked)
+                    span.radio.checkmark
                 .box-group
                   label Some Option-2
-                    input(type="radio", name="name-value", value="value-3")
+                    input(type="radio", name="name-value", value="value-2")
+                    span.radio.checkmark
                   label Some Option-3
-                    input(type="radio", name="name-value", value="value-4")
+                    input(type="radio", name="name-value", value="value-3")
+                    span.radio.checkmark
 
             div 
-              p Something 3
+              p.s-subtitle Some other choice description
               .box-container
                 .box-group
                   label Checkbox-value 1

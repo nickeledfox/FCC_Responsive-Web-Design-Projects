@@ -12,6 +12,7 @@
 
   /********** font **********/
   --font-family: "Source Sans Pro", sans-serif;
+  --subtitle-font-family: "Montserrat", sans-serif;
 
   /********** width **********/
   --main-width: 32.142857rem /* 450px -> 32.142857rem */;

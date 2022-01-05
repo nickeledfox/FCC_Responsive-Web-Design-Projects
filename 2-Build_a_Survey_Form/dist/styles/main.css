@@ -2,7 +2,8 @@
 
 @import "../../../node_modules/normalize.css/normalize.css";
 @import "vars.css";
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,500,600);
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@300;500&display=swap");
 
 body {
   font-family: var(--font-family);
@@ -31,11 +32,18 @@ body {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
+  font-family: var(--subtitle-font-family);
 }
 p {
   margin-bottom: 0;
 }
-
+.s-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: var(--subtitle-font-family);
+}
 /******** form style ********/
 #survey-form {
   width: var(--width);
@@ -109,6 +117,7 @@ form textarea:focus::placeholder {
 /********** buttom style ******/
 #submit {
   outline: 0;
+  color: rgba(0, 0, 0, 0.671);
   background-color: rgba(255, 255, 255, 0.863);
   border: 0;
   padding: 10px 15px;
@@ -134,7 +143,7 @@ form textarea:focus::placeholder {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  line-height: 1.6;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -154,7 +163,6 @@ form textarea:focus::placeholder {
   width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
   position: absolute;
   left: 0;
@@ -195,7 +203,19 @@ form textarea:focus::placeholder {
   transform: rotate(45deg);
 }
 
-/* Create a custom radio button */
+/*  custom radio button */
+.radio {
+  border-radius: 50%;
+}
+
+.box-group .span.checkmark-radio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
 
 /************* animation ************/
 .animated-particles {
