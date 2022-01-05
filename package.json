@@ -20,7 +20,11 @@
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
-    "gulp-pug": "^5.0.0"
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-useref": "^5.0.0",
+    "sass": "^1.45.2"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
