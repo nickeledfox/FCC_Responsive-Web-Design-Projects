@@ -5,8 +5,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const pug = require('gulp-pug');
 useref = require('gulp-useref');
 
-const base = '3-Build_a_Product_Landing_Page/src/';
-const dist = '3-Build_a_Product_Landing_Page' + '/dist';
+const base = '3-Product_Landing_Page/src/';
+const dist = '3-Product_Landing_Page' + '/dist';
 
 const browsersync = () => {
   browserSync.init({
@@ -41,6 +41,7 @@ const styles = () => {
       autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })
     )
     .pipe(useref())
+    .pipe(sass().on('error', sass.logError))
     .pipe(dest(dist + '/css'))
     .pipe(browserSync.stream());
 };
