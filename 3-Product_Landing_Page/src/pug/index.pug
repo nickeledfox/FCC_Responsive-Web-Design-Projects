@@ -1,2 +1,17 @@
-include base.pug
-  p test index
+include base
+body
+  #header-container
+    header#header
+      #header-img 
+        img(src="/assets/images/common/logo.svg", alt="logo")
+      nav#nav-bar
+        a.nav-link(href="#") About us
+        a.nav-link(href="#") Blog
+        a.nav-link(href="#") Marketing
+      //- form#form(action="https://www.freecodecamp.com/email-submit")
+      //-   input#email(
+      //-   type="email", 
+      //-   placeholder="Enter your work email !",
+      //-   required
+      //-   )
+      //-   button#submit(type="submit", name="submit-form") Request acces
