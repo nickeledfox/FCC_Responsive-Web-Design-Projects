@@ -1,0 +1,10 @@
+#header {
+  display: flex;
+}
+.nav-link {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+}

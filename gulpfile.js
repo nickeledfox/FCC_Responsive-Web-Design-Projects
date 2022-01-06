@@ -48,8 +48,8 @@ const styles = () => {
 
 const watching = () => {
   watch(base, pughtml).on('change', browserSync.reload);
-  watch([base + 'scss/**/*.scss'], styles);
-  watch(dist + '**/*.css').on('change', browserSync.reload);
+  watch(base + 'scss/**/*.scss', styles);
+  watch(dist + '/css/*.css').on('change', browserSync.reload);
 };
 
 exports.browsersync = browsersync;

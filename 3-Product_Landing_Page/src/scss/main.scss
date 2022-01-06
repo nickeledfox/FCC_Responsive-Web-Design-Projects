@@ -1,2 +1,5 @@
+@forward "node_modules/normalize.css/normalize.css";
+
+@forward '2-base/global';
 @forward '3-layout/hero';
-@forward '4-components/nav.scss';
+@forward '4-components/nav';
