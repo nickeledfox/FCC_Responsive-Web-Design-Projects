@@ -1,0 +1,9 @@
+@use '1-helpers/variables' as var;
+@use '1-helpers/colors' as *;
+
+@mixin input {
+  background-color: transparent;
+  border-radius: var.$round-border;
+  border: 2px solid;
+  color: $input-color;
+}

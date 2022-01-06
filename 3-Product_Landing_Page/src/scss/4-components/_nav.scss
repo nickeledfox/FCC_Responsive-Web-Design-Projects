@@ -1,9 +1,20 @@
 #header {
   display: flex;
+  margin-top: 2em;
+  align-items: center;
 }
+
+#header-img {
+  padding-right: 5rem;
+  padding-left: 4rem;
+}
+
 .nav-link {
   font-size: 1.3rem;
+  line-height: 1.8rem;
   text-transform: uppercase;
+  font-weight: 600;
+
   &:not(:first-child) {
     margin-left: 2rem;
   }

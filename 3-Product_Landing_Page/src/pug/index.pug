@@ -3,15 +3,23 @@ body
   #header-container
     header#header
       #header-img 
-        img(src="/assets/images/common/logo.svg", alt="logo")
+        a(href="#") 
+          img(src="/assets/images/common/logo.svg", alt="logo")
       nav#nav-bar
         a.nav-link(href="#") About us
         a.nav-link(href="#") Blog
         a.nav-link(href="#") Marketing
-      //- form#form(action="https://www.freecodecamp.com/email-submit")
-      //-   input#email(
-      //-   type="email", 
-      //-   placeholder="Enter your work email !",
-      //-   required
-      //-   )
-      //-   button#submit(type="submit", name="submit-form") Request acces
+  .container
+    #hero-container
+      h1#title.title Alpine
+      p.title#subtitle Social Media Marketing Platform
+      .hero-content
+        p The core systems of record for marketing that provide a common way of orchestring the experiences across channels and applications, including operational managment and measurement, with the ultimate goal of driving customer engagement.
+
+      form#form(action="https://www.freecodecamp.com/email-submit")
+        input#email(
+        type="email", 
+        placeholder="Enter your work email !",
+        required
+        )
+        button#submit(type="submit", name="submit-form") Request acces
