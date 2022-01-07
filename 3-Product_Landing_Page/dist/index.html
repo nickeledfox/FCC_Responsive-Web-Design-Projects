@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
     <title>Alpine</title>
   </head>
@@ -11,8 +12,9 @@
 <body>
   <div id="header-container">
     <header id="header">
-      <div id="header-img"> <a href="#"> <img src="/assets/images/common/logo.svg" alt="logo"></a></div>
-      <nav id="nav-bar"><a class="nav-link" href="#">About us</a><a class="nav-link" href="#blog">Blog</a><a class="nav-link" href="#">Marketing</a></nav>
+      <nav id="nav-bar"><a href=""> <img src="/assets/images/common/logo.svg" alt="logo" id="header-img"></a>
+        <div class="nav-links"><a class="nav-link" href="#title">About us</a><a class="nav-link" href="#blog">Blog</a><a class="nav-link" href="#marketing">Marketing</a></div>
+      </nav>
     </header>
   </div>
   <div class="container">
@@ -23,13 +25,21 @@
         <p>The core systems of record for marketing that provide a common way of orchestring the experiences across channels and applications, including operational managment and measurement, with the ultimate goal of driving customer engagement.</p>
       </div>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" type="email" placeholder="Enter your work email !" required>
-        <button id="submit" type="submit" name="submit-form">Request acces</button>
+        <input id="email" name="email" type="email" placeholder="Enter your work email !" required>
+        <input id="submit" type="submit" value="Request acces">
       </form>
     </div>
-    <main id="blog">
-      <h2 class="title">Check our YouTube chennel</h2>
-      <iframe id="video" width="520" height="340" src="https://www.youtube.com/embed/YHusujC8MOw?autoplay=1&amp;mute=1"></iframe>
+    <main>
+      <section id="blog">
+        <h2 class="title">Check our YouTube chennel</h2>
+        <iframe id="video" width="520" height="340" src="https://www.youtube.com/embed/YHusujC8MOw?autoplay=1&amp;mute=1" frameborder="0" allowfullscreen></iframe>
+      </section>
+      <section id="marketing">
+        <div>
+          <h2 class="title">Marketing</h2>
+        </div>
+        <div> <i class="far fa-comment-dots"></i><i class="far fa-edit" id="marketing-btn"><a href="#">Start a thread</a></i></div>
+      </section>
     </main>
   </div>
 </body>

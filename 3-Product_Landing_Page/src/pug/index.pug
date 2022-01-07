@@ -2,13 +2,13 @@ include base
 body
   #header-container
     header#header
-      #header-img 
-        a(href="#") 
-          img(src="/assets/images/common/logo.svg", alt="logo")
       nav#nav-bar
-        a.nav-link(href="#") About us
-        a.nav-link(href="#blog") Blog
-        a.nav-link(href="#") Marketing
+        a(href="") 
+          img(src="/assets/images/common/logo.svg", alt="logo")#header-img
+        .nav-links
+          a.nav-link(href="#title") About us
+          a.nav-link(href="#blog") Blog
+          a.nav-link(href="#marketing") Marketing
   .container
     #hero-container
       h1#title.title Alpine
@@ -18,13 +18,29 @@ body
 
       form#form(action="https://www.freecodecamp.com/email-submit")
         input#email(
+        name="email",
         type="email", 
         placeholder="Enter your work email !",
         required
         )
-        button#submit(type="submit", name="submit-form") Request acces
+        input#submit(type="submit", value="Request acces") 
 
-    main#blog
-      h2.title Check our YouTube chennel
+    main
+      section#blog
+        h2.title Check our YouTube chennel
+        iframe#video(
+          width='520',
+          height='340', 
+          src='https://www.youtube.com/embed/YHusujC8MOw?autoplay=1&mute=1',
+          frameborder="0",
+          allowfullscreen
+          )
 
-      iframe#video(width='520', height='340', src='https://www.youtube.com/embed/YHusujC8MOw?autoplay=1&mute=1')
+      section#marketing
+        div
+          h2.title Marketing
+        div 
+          i.far.fa-comment-dots
+          i.far.fa-edit#marketing-btn
+            a(href="#") Start a thread
+            
