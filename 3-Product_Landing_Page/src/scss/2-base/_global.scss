@@ -15,6 +15,14 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: colors.$accent-color;
+}
+
+::selection {
+  background: colors.$accent-color;
+}
+
 :focus,
 :active {
   outline: none;
@@ -55,6 +63,7 @@ body {
   color: colors.$font-color-main;
 
   background-color: #c4c4c4;
+  background-image: url("https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
 
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;

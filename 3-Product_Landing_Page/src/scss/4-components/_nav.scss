@@ -14,8 +14,22 @@
   line-height: 1.8rem;
   text-transform: uppercase;
   font-weight: 600;
+  transition: background-size 0.2s;
+  padding: 0 3px;
 
   &:not(:first-child) {
     margin-left: 2rem;
+  }
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(-120deg, #d62121, #c72c2c, #3a1111);
+    background-position: 0 100%;
+    background-size: 4px 4px;
+    text-decoration: none;
+  }
+
+  &:active {
+    background-size: 20px 70px;
   }
 }
