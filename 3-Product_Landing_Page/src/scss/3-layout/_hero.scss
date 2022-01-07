@@ -4,7 +4,7 @@
 
 .container {
   width: var.$main-content-width;
-  margin: 6.7rem auto 3.6rem;
+  margin: 10rem auto 3.6rem;
   padding: 5.4rem 4.5rem;
   background: linear-gradient(
     180deg,
@@ -51,7 +51,7 @@
   line-height: 1.3rem;
   color: $input-color;
 
-  & > input {
+  #email {
     @include input;
     padding: 0.5rem 0 0.5rem 2.5rem;
     width: 291px;
@@ -66,7 +66,7 @@
     }
   }
 
-  & > button {
+  #submit {
     @include input;
     padding: 0.5rem 1.2rem;
     border-color: $accent-color;

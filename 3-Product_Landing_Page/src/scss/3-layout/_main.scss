@@ -3,11 +3,41 @@
 
 #blog {
   margin-top: 10em;
-  border-top: 1px solid colors.$accent-color;
+  border-top: 1px solid colors.$input-color;
   padding-top: 3rem;
 
   .title {
     margin-bottom: 2rem;
     font-size: 1.7rem;
+  }
+}
+
+#marketing {
+  width: 60%;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    font-size: 1.5rem;
+  }
+  border-bottom: 1px dotted;
+}
+
+#marketing-btn {
+  background: linear-gradient(180deg, #864a23 0%, #6a3a1b 100%);
+  border-radius: 1.4rem;
+  margin-left: 0.7rem;
+  padding: 0.3rem 1rem;
+  transition: all 0.3s;
+
+  & a {
+    padding-left: 5px;
+  }
+
+  &:hover {
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.678);
   }
 }
