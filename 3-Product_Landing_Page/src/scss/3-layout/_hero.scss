@@ -45,8 +45,7 @@
 }
 
 #form {
-  display: flex;
-  justify-content: space-between;
+  @include flex-bt;
   font-family: "Pavanam", sans-serif;
   line-height: 1.3rem;
   color: $input-color;
@@ -72,6 +71,7 @@
     border-color: $accent-color;
     transition: color 0.3s;
     position: relative;
+    cursor: pointer;
 
     &:hover {
       background-color: $accent-color;

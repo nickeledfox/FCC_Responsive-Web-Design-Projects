@@ -7,3 +7,13 @@
   border: 2px solid;
   color: $input-color;
 }
+
+@mixin flex-bt {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}

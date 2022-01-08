@@ -1,5 +1,6 @@
 @use '1-helpers/variables' as var;
 @use '1-helpers/colors';
+@use '1-helpers/mixins' as *;
 
 #blog {
   margin-top: 10em;
@@ -11,19 +12,43 @@
     font-size: 1.7rem;
   }
 }
+.span {
+  color: colors.$accent-color;
+  font-family: var.$font-family-primary;
+  font-weight: 700;
+}
+
+.social {
+  margin-top: 8rem;
+
+  .folow-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+  }
+}
+
+.social-media {
+  @include flex-bt;
+  margin: auto;
+  width: 70%;
+
+  & img {
+    max-width: 100%;
+    width: 2.6rem;
+  }
+}
 
 #marketing {
-  width: 60%;
+  @include flex-bt;
+  width: 45%;
   margin: auto;
-  margin-top: 5rem;
-  display: flex;
+  margin-top: 12rem;
   align-items: center;
-  justify-content: space-between;
 
   .title {
     font-size: 1.5rem;
   }
-  border-bottom: 1px dotted;
 }
 
 #marketing-btn {
@@ -39,5 +64,42 @@
 
   &:hover {
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.678);
+  }
+}
+
+.marketing-content {
+  margin-top: 5rem;
+  color: colors.$input-color;
+  line-height: 1.7;
+
+  &-group {
+    align-self: center;
+    @include flex-bt;
+
+    & img {
+      max-width: 100%;
+      width: 60%;
+      margin-bottom: 8rem;
+    }
+  }
+
+  &-img {
+    &__left {
+      padding-right: 2rem;
+    }
+    &__right {
+      padding-left: 2rem;
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  &__text {
+    align-self: center;
+    margin-bottom: 10%;
   }
 }
